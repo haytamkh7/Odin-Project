@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Last Library</title>
+</head>
+<body>
+    <h1>Books of The Library:</h1>
+    <div id="book-container"></div>
+    <button id="new-book-btn">Add Book</button>
+    <button id="show-books-btn">Show Books</button>
+    <!-- New book dialog -->
+    <dialog id="new-book-dialog">
+        <form method="dialog" id="new-book-form">
+            <label>
+                Title: 
+                <input type="text" name="title" required />
+            </label>
+            <label>
+                Author: 
+                <input type="text" name="author" required />
+            </label>
+            <label>
+                Pages: 
+                <input type="number" name="pages" required />
+            </label>
+            
+            <label>
+                Publish Year: 
+                <input type="number" name="publish-year" required />
+            </label>
+            <label>
+                Read:
+                <input type="checkbox" name="read-status">
+            </label>
+            
+            <menu>
+            <button type="submit" id="submit-book-btn">Submit</button>
+            <button type="button" id="cancel-btn">Cancel</button>
+            </menu>
+        </form>
+    </dialog>
+    <!-- End new book dialog -->
+
+    <!-- Change read status dialog -->
+    <dialog id="change-read-status-dialog">
+        <form method="dialog" id="read-status-form">
+            <label>
+                Read:
+                <input type="checkbox" name="new-read-status">
+            </label>
+            
+            <menu>
+            <button type="submit" id="save-read-status-btn">Save</button>
+            <button type="button" id="cancel-read-status-btn">Cancel</button>
+            </menu>
+        </form>
+    </dialog>
+    <!-- End  read status dialog -->
+    
+    <script src="library.js"></script>
+</body>
+</html>
