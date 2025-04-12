@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -14,15 +18,30 @@ h1 {
 }
 
 
+
 #book-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 13px;
-    border-radius: 13px;
+    gap: 10px;
+    margin: 10px;
+    width: 80%;
+    font-family:  'Cascadia Code', sans-serif;
 }
 
-#new-book-btn, #show-books-btn, #submit-book-btn, #cancel-btn {
+#book-container h3 {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+#book-container p {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#new-book-btn, #show-books-btn, #submit-book-btn, #cancel-btn, .delete-book-btn, .change-read-btn, #save-read-status-btn, #cancel-read-status-btn {
     padding: 10px 10px;
     width: auto;
     max-width: 250px;
@@ -36,14 +55,31 @@ h1 {
 
 }
 
-#new-book-btn:hover {
+
+
+#new-book-btn:hover, #save-read-status-btn:hover {
     background-color: chartreuse;
     cursor: pointer;
     
 }
 
+.change-read-btn:hover {
+    background-color: darkorange;
+    cursor: pointer;
+}
+
 #new-book-dialog {
     width: 50%;
+}
+
+#change-read-status-dialog {
+    padding: 13px;
+    max-width: 400px;
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: wheat;
+    border: 0.5px solid black;
 }
 
 #new-book-form {
@@ -80,7 +116,8 @@ h1 {
     cursor: pointer;
 }
 
-#cancel-btn:hover{
+
+#cancel-btn:hover, .delete-book-btn:hover, #cancel-read-status-btn:hover{
     background-color: crimson;
     cursor: pointer;
 
@@ -94,9 +131,13 @@ h1 {
 }
 
 .book-card {
-    padding: 5px;
-    background-color: rgb(137, 166, 191);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    background-color: beige;
+    width: 350px;
 }
+
 
