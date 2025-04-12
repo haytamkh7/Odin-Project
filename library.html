@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>The Last Library</title>
 </head>
 <body>
-    <h1>Books of The Library:</h1>
+    <h1>Books of The Library</h1>
     <div id="book-container"></div>
-    <button id="new-book-btn">Add Book</button>
+    <button id="new-book-btn">Add New Book</button>
     <button id="show-books-btn">Show Books</button>
     <!-- New book dialog -->
     <dialog id="new-book-dialog">
         <form method="dialog" id="new-book-form">
             <label>
-                Title: 
+                <p>Title:</p> 
                 <input type="text" name="title" required />
             </label>
             <label>
-                Author: 
+                <p>Author:</p> 
                 <input type="text" name="author" required />
             </label>
             <label>
-                Pages: 
+                <p>Pages:</p> 
                 <input type="number" name="pages" required />
             </label>
             
             <label>
-                Publish Year: 
+                <p>Publish Year:</p> 
                 <input type="number" name="publish-year" required />
             </label>
             <label>
-                Read:
+                <p>Read:</p>
                 <input type="checkbox" name="read-status">
             </label>
             

@@ -13,20 +13,84 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 #book-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    background-color: blanchedalmond;
     padding: 13px;
     border-radius: 13px;
+}
+
+#new-book-btn, #show-books-btn, #submit-book-btn, #cancel-btn {
+    padding: 10px 10px;
+    width: auto;
+    max-width: 250px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#new-book-btn:hover {
+    background-color: chartreuse;
+    cursor: pointer;
+    
+}
+
+#new-book-dialog {
+    width: 50%;
+}
+
+#new-book-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+#new-book-form label {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#new-book-form input {
+    padding: 8px;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+
+#show-books-btn:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#submit-book-btn:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+#cancel-btn:hover{
+    background-color: crimson;
+    cursor: pointer;
+
 }
 
 .book-card h3:first-of-type {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
     font-size: 1.3rem;
+    text-align: center;
 }
 
 .book-card {
